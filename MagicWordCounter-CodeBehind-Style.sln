@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicWordCounter-CodeBehind-Style", "MagicWordCounter-CodeBehind-Style\MagicWordCounter-CodeBehind-Style.csproj", "{6BCAA1B1-DF7F-43AE-84BD-75E6FF42A012}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{CACA98D9-0C44-4497-9465-3C2D721DC070}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicWordCounter.Tests", "MagicWordCounter.Tests\MagicWordCounter.Tests.csproj", "{DE68FECF-EA5B-4187-909B-58C86757413A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BCAA1B1-DF7F-43AE-84BD-75E6FF42A012}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BCAA1B1-DF7F-43AE-84BD-75E6FF42A012}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BCAA1B1-DF7F-43AE-84BD-75E6FF42A012}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BCAA1B1-DF7F-43AE-84BD-75E6FF42A012}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE68FECF-EA5B-4187-909B-58C86757413A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE68FECF-EA5B-4187-909B-58C86757413A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE68FECF-EA5B-4187-909B-58C86757413A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE68FECF-EA5B-4187-909B-58C86757413A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DE68FECF-EA5B-4187-909B-58C86757413A} = {CACA98D9-0C44-4497-9465-3C2D721DC070}
+	EndGlobalSection
+EndGlobal
