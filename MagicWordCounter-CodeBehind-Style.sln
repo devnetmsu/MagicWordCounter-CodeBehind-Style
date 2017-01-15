@@ -9,6 +9,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{CACA98D9
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicWordCounter.Tests", "MagicWordCounter.Tests\MagicWordCounter.Tests.csproj", "{DE68FECF-EA5B-4187-909B-58C86757413A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{394340ED-D9FB-489E-9E13-AEE4AD453B20}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.MD = README.MD
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
