@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MagicWordCounter_CodeBehind_Style"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Magic Word Counter" Height="350" Width="525">
     <Grid>
-        
+        <TextBox x:Name="txtToCount" Margin="10,10,10,66" TextWrapping="Wrap" Text="" />
+        <Label x:Name="lblCount" Content="0 words(s)" HorizontalAlignment="Left" Margin="10,0,0,35" VerticalAlignment="Bottom"/>
+        <Button x:Name="btnCount" Content="Count" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="75"/>
+        <CheckBox x:Name="chbExcludeArticles" Content="Exclude Articles" HorizontalAlignment="Left" Margin="90,0,0,12" VerticalAlignment="Bottom"/>
+        <CheckBox x:Name="chbNamesAsOne" Content="Count Names as One Word" HorizontalAlignment="Left" Margin="197,0,0,12" VerticalAlignment="Bottom"/>        
     </Grid>
 </Window>
