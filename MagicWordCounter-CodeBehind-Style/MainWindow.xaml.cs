@@ -81,13 +81,17 @@ namespace MagicWordCounter_CodeBehind_Style
 
         public void btnCount_Click(object sender, RoutedEventArgs e)
         {
-            var textToCount = txtToCount.Text.Replace(Environment.NewLine, " ").Replace("…", " ");
             var wordCount = 0;
+
+            // Strip out new lines and elipses (otherwise "some quote…is split" counts as 3 words)
+            var textToCount = txtToCount.Text.Replace(Environment.NewLine, " ").Replace("…", " ");            
 
             // Count words, taking into account article adjective settings
             foreach (var word in textToCount.Split(' '))
             {
-                if (!string.IsNullOrEmpty(word) && (!isArticle(word) || !chbExcludeArticles.IsChecked.Value))
+                if (!string.IsNullOrEmpty(word) && // word must not be null or empty
+                        (!isArticle(word) || // AND either word must not be an article
+                        !chbExcludeArticles.IsChecked.Value)) // OR article exclusion should be enabled
                 {
                     wordCount += 1;
                 }
