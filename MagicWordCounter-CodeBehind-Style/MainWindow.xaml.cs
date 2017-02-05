@@ -89,9 +89,10 @@ namespace MagicWordCounter_CodeBehind_Style
             // Count words, taking into account article adjective settings
             foreach (var word in textToCount.Split(' '))
             {
-                if (!string.IsNullOrEmpty(word) && // word must not be null or empty
-                        (!isArticle(word) || // AND either word must not be an article
-                        !chbExcludeArticles.IsChecked.Value)) // OR article exclusion should be enabled
+                // Increment word count IF
+                if (!string.IsNullOrEmpty(word) && // word is not null or empty.
+                        (!isArticle(word.Trim('\"')) || // AND (either word is not an article adjective.  // The trim is to remove quotation marks from articles.  `This is "a sentence"` would count `"a` as a word
+                        !chbExcludeArticles.IsChecked.Value)) // OR article exclusion is disabled)
                 {
                     wordCount += 1;
                 }
